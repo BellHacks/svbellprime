@@ -1,5 +1,5 @@
 ##############
-Django Chartjs
+Using GitHub tutorial as base for frontend
 ##############
 
 Django Chartjs lets you manage charts in your Django application.
