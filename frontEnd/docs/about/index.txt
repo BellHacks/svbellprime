@@ -1,9 +1,0 @@
-############################
-About django-chartjs
-############################
-
-.. toctree::
-
-   license
-   authors
-   changelog
