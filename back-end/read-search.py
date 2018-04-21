@@ -38,6 +38,7 @@ def readData():
 			obj = generalStore(data_org[0], data_org[1], data_org[2], data_org[3], data_org[4], data_org[5])
 			#appending objects to objectsOld list
 			domains.append(obj)
+
 	#using with loop to open up textfile
 	#using with loop to open up textfile
 	with open("kingdom.txt") as file:
@@ -57,7 +58,6 @@ def readData():
 			obj = generalStore(data_org[0], data_org[1], data_org[2], data_org[3], data_org[4], data_org[5])
 			#appending objects to objectsOld list
 			kingdoms.append(obj)
-	'''
 	#using with loop to open up textfile
 	with open("phylum.txt") as file:
 		#reading all the lines in the textfile and storing it in the variable data
@@ -112,7 +112,7 @@ def readData():
 			obj = generalStore(data_org[0], data_org[1], data_org[2], data_org[3], data_org[4], data_org[5])
 			#appending objects to objectsOld list
 			classes.append(obj)
-			'''
+			
 			
 def userInput():
 	ask = input("What do you want to know more about? ")
@@ -135,7 +135,7 @@ def userInput():
 			print("Unique characteristic: " + domains[a].unique)
 			break
 		a = a + 1
-	
+
 	b = 0
 	while b != len(kingdoms):
 		if ask in kingdoms[b].Pname:
@@ -155,120 +155,126 @@ def userInput():
 			print("Unique characteristic: " + kingdoms[b].unique)
 			break
 		b = b + 1
-	'''
+
+	c = 0
 	while c != len(phylums):
-		if ask in phylums[i].Pname:
-			print("Phylogenetic name: " + phylums[i].Pname)
-			print("General name: " + phylums[i].Gname)
-			print("Cell type: " + phylums[i].cell)
-			print("Lifespan: " + phylums[i].lifespan)
-			print("Development: " + phylums[i].development)
-			print("Unique characteristic: " + phylums[i].unique)
-		if ask in phylums[i].Gname:
-			print("Phylogenetic name: " + phylums[i].Pname)
-			print("General name: " + phylums[i].Gname)
-			print("Cell type: " + phylums[i].cell)
-			print("Lifespan: " + phylums[i].lifespan)
-			print("Development: " + phylums[i].development)
-			print("Unique characteristic: " + phylums[i].unique)	
+		if ask in phylums[c].Pname:
+			print("Phylogenetic name: " + phylums[c].Pname)
+			print("General name: " + phylums[c].Gname)
+			print("Cell type: " + phylums[c].cell)
+			print("Lifespan: " + phylums[c].lifespan)
+			print("Development: " + phylums[c].development)
+			print("Unique characteristic: " + phylums[c].unique)
+		if ask in phylums[c].Gname:
+			print("Phylogenetic name: " + phylums[c].Pname)
+			print("General name: " + phylums[c].Gname)
+			print("Cell type: " + phylums[c].cell)
+			print("Lifespan: " + phylums[c].lifespan)
+			print("Development: " + phylums[c].development)
+			print("Unique characteristic: " + phylums[c].unique)	
 			break
 		c = c + 1
-		
-	while d != len(classes):
-		if ask in classes[i].Pname:
-			print("Phylogenetic name: " + classes[i].Pname)
-			print("General name: " + classes[i].Gname)
-			print("Cell type: " + classes[i].cell)
-			print("Lifespan: " + classes[i].lifespan)
-			print("Development: " + classes[i].development)
-			print("Unique characteristic: " + classes[i].unique)
-		if ask in classes[i].Gname:
-			print("Phylogenetic name: " + classes[i].Pname)
-			print("General name: " + classes[i].Gname)
-			print("Cell type: " + classes[i].cell)
-			print("Lifespan: " + classes[i].lifespan)
-			print("Development: " + classes[i].development)
-			print("Unique characteristic: " + classes[i].unique)
-			
-	while i != len(orders):
-		if ask in orders[i].Pname:
-			print("Phylogenetic name: " + orders[i].Pname)
-			print("General name: " + orders[i].Gname)
-			print("Cell type: " + orders[i].cell)
-			print("Lifespan: " + orders[i].lifespan)
-			print("Development: " + orders[i].development)
-			print("Unique characteristic: " + orders[i].unique)
-			break
-		if ask in orders[i].Gname:
-			print("Phylogenetic name: " + orders[i].Pname)
-			print("General name: " + orders[i].Gname)
-			print("Cell type: " + orders[i].cell)
-			print("Lifespan: " + orders[i].lifespan)
-			print("Development: " + orders[i].development)
-			print("Unique characteristic: " + orders[i].unique)
-			break
-		i = i + 1
-		
-	while i != len(families):
-		if ask in families[i].Pname:
-			print("Phylogenetic name: " + families[i].Pname)
-			print("General name: " + families[i].Gname)
-			print("Cell type: " + families[i].cell)
-			print("Lifespan: " + families[i].lifespan)
-			print("Development: " + families[i].development)
-			print("Unique characteristic: " + families[i].unique)
-			break
-		if ask in families[i].Gname:
-			print("Phylogenetic name: " + families[i].Pname)
-			print("General name: " + families[i].Gname)
-			print("Cell type: " + families[i].cell)
-			print("Lifespan: " + families[i].lifespan)
-			print("Development: " + families[i].development)
-			print("Unique characteristic: " + families[i].unique)
-			break
-		i = i + 1
 	
-	while i != len(genera):
-		if ask in genera[i].Pname:
-			print("Phylogenetic name: " + genera[i].Pname)
-			print("General name: " + genera[i].Gname)
-			print("Cell type: " + genera[i].cell)
-			print("Lifespan: " + genera[i].lifespan)
-			print("Development: " + genera[i].development)
-			print("Unique characteristic: " + genera[i].unique)
+	d = 0	
+	while d != len(classes):
+		if ask in classes[d].Pname:
+			print("Phylogenetic name: " + classes[d].Pname)
+			print("General name: " + classes[d].Gname)
+			print("Cell type: " + classes[d].cell)
+			print("Lifespan: " + classes[d].lifespan)
+			print("Development: " + classes[d].development)
+			print("Unique characteristic: " + classes[d].unique)
+		if ask in classes[d].Gname:
+			print("Phylogenetic name: " + classes[d].Pname)
+			print("General name: " + classes[d].Gname)
+			print("Cell type: " + classes[d].cell)
+			print("Lifespan: " + classes[d].lifespan)
+			print("Development: " + classes[d].development)
+			print("Unique characteristic: " + classes[d].unique)
+		d = d + 1
+	
+	e = 0		
+	while e != len(orders):
+		if ask in orders[e].Pname:
+			print("Phylogenetic name: " + orders[e].Pname)
+			print("General name: " + orders[e].Gname)
+			print("Cell type: " + orders[e].cell)
+			print("Lifespan: " + orders[e].lifespan)
+			print("Development: " + orders[e].development)
+			print("Unique characteristic: " + orders[e].unique)
 			break
-		if ask in genera[i].Gname:
-			print("Phylogenetic name: " + genera[i].Pname)
-			print("General name: " + genera[i].Gname)
-			print("Cell type: " + genera[i].cell)
-			print("Lifespan: " + genera[i].lifespan)
-			print("Development: " + genera[i].development)
-			print("Unique characteristic: " + genera[i].unique)
+		if ask in orders[e].Gname:
+			print("Phylogenetic name: " + orders[e].Pname)
+			print("General name: " + orders[e].Gname)
+			print("Cell type: " + orders[e].cell)
+			print("Lifespan: " + orders[e].lifespan)
+			print("Development: " + orders[e].development)
+			print("Unique characteristic: " + orders[e].unique)
 			break
-		i = i + 1
+		e = e + 1
 		
-	while i != len(species):
-		if ask in species[i].Pname:
-			print("Phylogenetic name: " + species[i].Pname)
-			print("General name: " + species[i].Gname)
-			print("Cell type: " + species[i].cell)
-			print("Lifespan: " + species[i].lifespan)
-			print("Development: " + species[i].development)
-			print("Unique characteristic: " + species[i].unique)
+	f = 0	
+	while f != len(families):
+		if ask in families[f].Pname:
+			print("Phylogenetic name: " + families[f].Pname)
+			print("General name: " + families[f].Gname)
+			print("Cell type: " + families[f].cell)
+			print("Lifespan: " + families[f].lifespan)
+			print("Development: " + families[f].development)
+			print("Unique characteristic: " + families[f].unique)
 			break
-		if ask in species[i].Gname:
-			print("Phylogenetic name: " + species[i].Pname)
-			print("General name: " + species[i].Gname)
-			print("Cell type: " + species[i].cell)
-			print("Lifespan: " + species[i].lifespan)
-			print("Development: " + species[i].development)
-			print("Unique characteristic: " + species[i].unique)
+		if ask in families[f].Gname:
+			print("Phylogenetic name: " + families[f].Pname)
+			print("General name: " + families[f].Gname)
+			print("Cell type: " + families[f].cell)
+			print("Lifespan: " + families[f].lifespan)
+			print("Development: " + families[f].development)
+			print("Unique characteristic: " + families[f].unique)
 			break
-		i = i + 1
-	'''
+		f = f + 1
+	
+	g = 0
+	while g != len(genera):
+		if ask in genera[g].Pname:
+			print("Phylogenetic name: " + genera[g].Pname)
+			print("General name: " + genera[g].Gname)
+			print("Cell type: " + genera[g].cell)
+			print("Lifespan: " + genera[g].lifespan)
+			print("Development: " + genera[g].development)
+			print("Unique characteristic: " + genera[g].unique)
+			break
+		if ask in genera[g].Gname:
+			print("Phylogenetic name: " + genera[g].Pname)
+			print("General name: " + genera[g].Gname)
+			print("Cell type: " + genera[g].cell)
+			print("Lifespan: " + genera[g].lifespan)
+			print("Development: " + genera[g].development)
+			print("Unique characteristic: " + genera[g].unique)
+			break
+		g = g + 1
+		
+	h = 0	
+	while h != len(species):
+		if ask in species[h].Pname:
+			print("Phylogenetic name: " + species[h].Pname)
+			print("General name: " + species[h].Gname)
+			print("Cell type: " + species[h].cell)
+			print("Lifespan: " + species[h].lifespan)
+			print("Development: " + species[h].development)
+			print("Unique characteristic: " + species[h].unique)
+			break
+		if ask in species[h].Gname:
+			print("Phylogenetic name: " + species[h].Pname)
+			print("General name: " + species[h].Gname)
+			print("Cell type: " + species[h].cell)
+			print("Lifespan: " + species[h].lifespan)
+			print("Development: " + species[h].development)
+			print("Unique characteristic: " + species[h].unique)
+			break
+		h = h + 1
 	
 def main():
-	userInput()
 	readData()
+	userInput()
 	
 main()
