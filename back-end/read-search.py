@@ -1,8 +1,9 @@
 #defining 3 different classes for three different categories of subjects
 class generalStore():
 	#initializing class with properties of time, stride, identity, and age
-	def __init__(self, identity, cell, lifespan, development, unique):
-		self.identity = identity
+	def __init__(self, Pname, Gname, cell, lifespan, development, unique):
+		self.Pname = Pname
+		self.Gname = Gname
 		self.cell = cell
 		self.lifespan = lifespan
 		self.development = development
@@ -34,11 +35,35 @@ def readData():
 			#debug 2 below
 			#print(data_org)
 			#defining objects with these properties
-			obj = generalStore(data_org[0], data_org[1], data_org[2], data_org[3], data_org[4])
+			obj = generalStore(data_org[0], data_org[1], data_org[2], data_org[3], data_org[4], data_org[5])
 			#appending objects to objectsOld list
 			kingdoms.append(obj)
-			
+
+
+def userInput():
+	ask = input("What do you want to know more about? ")
+	i = 0
+	while i != len(kingdoms):
+		if ask in kingdoms[i].Pname:
+			print("Phylogenetic name: " + kingdoms[i].Pname)
+			print("General name: " + kingdoms[i].Gname)
+			print("Cell type: " + kingdoms[i].cell)
+			print("Lifespan: " + kingdoms[i].lifespan)
+			print("Development: " + kingdoms[i].development)
+			print("Unique characteristic: " + kingdoms[i].unique)
+			break
+		if ask in kingdoms[i].Gname:
+			print("Phylogenetic name: " + kingdoms[i].Pname)
+			print("General name: " + kingdoms[i].Gname)
+			print("Cell type: " + kingdoms[i].cell)
+			print("Lifespan: " + kingdoms[i].lifespan)
+			print("Development: " + kingdoms[i].development)
+			print("Unique characteristic: " + kingdoms[i].unique)
+			break
+		i = i + 1
+					
 def main():
 	readData()
-
+	userInput()
+	
 main()
