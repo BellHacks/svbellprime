@@ -1,0 +1,3 @@
+Prokarya, prokaryotes, prokaryote, varies, binary fission, exponential reproduction
+Eukarya, eukaryotes, eukaryote, varies, varies, have a nucleus
+Archaea, archaea, prokaryote, varies, varies, extremophiles
