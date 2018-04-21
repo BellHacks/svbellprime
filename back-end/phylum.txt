@@ -4,19 +4,13 @@ anthropoda, anthropods, eukaryote, varies, protostome, segmented body
 echinoderm, echinoderms, eukaryote, varies, deuterostome, stinging cells
 annelida, annelids, eukaryote, varies, protostome, multiple circular segment
 platyhelminthes, flatworms, eukaryote, varies, protostome, fragment
-
-
 bryophyta, mosses, eukaryote, varies, sporophytes, no vascular system
 pteridophytae, ferns, eukaryote, varies, gametophytes, vascular system
 angiosperms, herbaceous plants, eukaryote, varies, flowers, flowers in a carpel
 gynosperms, conifers, eukaryote, varies, seeds, produces fruit
-
-
 ascomycota, sac fungi, eukaryote, varies, ascospores, special pods 
 chytridiomycota, chytrids, eukaryote, varies, sporangiospores, variations with asexual reproduction 
 basidiomycota, basidiomycetes, eukaryote, varies, spores, sexual reproduction
-
-
 forams, foraminifera, eukaryote, varies, varies, stream ectoplasm
 microsporidia, small spore, eukaryote, varies, spores, unicellular parasites
 amoebozoa, amoeboid protists, eukaryote, varies, varies, have pseudopods
