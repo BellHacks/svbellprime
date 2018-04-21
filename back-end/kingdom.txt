@@ -1,4 +1,0 @@
-Animalia, animals, eukaryote, varies, varies, mobile
-Protista, protists, eukaryote, varies, varies, diversity
-Fungi, fungi, eukaryote, varies, varies, reproduction
-Plantae, plants, eukaryote, varies, varies, photosynthesis
