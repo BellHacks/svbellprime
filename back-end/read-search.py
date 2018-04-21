@@ -26,13 +26,13 @@ def readData():
 		#using a for loop for each line in data
 		for line in data:
 			#debug 1 below
-			print(line)
+			#print(line)
 			#splitting lines into two
 			data_org = line.split(',')
 			#eliminating spaces
 			data_org = [elem.strip() for elem in data_org]
 			#debug 2 below
-			p\rint(data_org)
+			#print(data_org)
 			#defining objects with these properties
 			obj = generalStore(data_org[0], data_org[1], data_org[2], data_org[3], data_org[4])
 			#appending objects to objectsOld list
