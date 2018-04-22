@@ -15,3 +15,6 @@ forams, foraminifera, eukaryote, varies, varies, stream ectoplasm
 microsporidia, small spore, eukaryote, varies, spores, unicellular parasites
 amoebozoa, amoeboid protists, eukaryote, varies, varies, have pseudopods
 sarcomastigophora, sarcomastigophores, eukaryote, varies, varies, flagellae
+rhizopoda, , , , , 
+actinopoda, , , , , 
+foraminifera, , , , , 
