@@ -1,1 +1,17 @@
-Mammal, mammals, mammalian cell, varies, deuterostomee, mostly have hair
+Mammal, mammals, mammalian cell, varies, deuterostome, mostly have hair
+Reptilia, reptiles, eukaryote, varies, deuterostome, have scales
+
+Scyphozoa, jellyfish
+Anthozoa, anemones
+
+Arachnida, ticks mites spiders scorpions
+Diplopoda, millipedes
+
+Asteroidea, starfish
+Echinoidea, sea urchins
+
+Polychaeta, marine annelids
+Hirudinea, marine and terrestrial annelids
+
+Flukes, flukes
+Turbellaria, turbellaria
